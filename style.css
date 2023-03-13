@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root{
+  /* ### Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container{
+  margin: 3rem 0;
+  animation:opacity 2s ease-in-out;
+}
+.header{
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+h1{
+  color: var(--Very-Dark-Blue);
+}
+.header-title-thin{
+  font-weight: 200;
+  
+}
+.header-title-fat{
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.header-info{
+  color:var(--Grayish-Blue) ;
+  margin-bottom: 2.5rem;
+}
+.container{
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.container-box{
+ 
+  box-shadow: 0 0 20px  0 var(--Grayish-Blue);
+  padding:2.5rem 2rem;
+  border-top: 5px solid;
+  border-radius: 10px;
+  max-width: 400px;
+  height: 250px;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+}
+.container-box-1{
+  border-color: var(--Cyan);
+  
+}
+.container-box-2{
+  border-color: var(--Red);
+}
+.container-box-3{
+  border-color: var(--Orange);
+}
+.container-box-4{
+  border-color: var(--Blue);
+}
+.container-title{
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.container-info{
+  color: var(--Grayish-Blue);
+  font-weight:400;
+  margin-bottom: 3rem;
+}
+.container-img{
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  width: 60px;
+
+}
+.flex{
+  display: flex;
+  flex-direction: column; 
+}
+@keyframes opacity {
+  0%{
+    opacity:0;
+    transform: translateX(-5rem);
+  }
+  80%{
+    opacity:0.8;
+
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+@media (min-width:1285px) {
+    .container{
+      flex-direction: row;
+      column-gap: 1.5rem;
+    }
+    .header{
+      max-width: 500px;
+    }
+
+}
+@media (max-width:424px) {
+    .main-container{
+      margin: 3.5rem 1rem;
+    }
+}
+
+
