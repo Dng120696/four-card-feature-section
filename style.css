@@ -28,11 +28,11 @@ body{
 }
 
 .main-container{
-  margin: 3rem 0;
+  margin: 3,5rem 0;
   animation:opacity 2s ease-in-out;
 }
 .header{
-  max-width: 400px;
+  max-width: 380px;
   text-align: center;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@ h1{
 }
 .header-info{
   color:var(--Grayish-Blue) ;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 .container{
   max-width: 1300px;
@@ -58,15 +58,16 @@ h1{
   align-items: center;
   justify-content: space-between;
  
+ 
 }
 .container-box{
  
-  box-shadow: 0 0 20px  0 var(--Grayish-Blue);
+  box-shadow: 2px 2px 20px  0 hsla(229, 6%, 66%,0.2);
   padding:2.5rem 2rem;
   border-top: 5px solid;
   border-radius: 10px;
-  max-width: 400px;
-  height: 250px;
+  max-width: 380px;
+  height: 240px;
   margin: 0 0 1.5rem 0;
   position: relative;
 }
@@ -118,7 +119,7 @@ h1{
     transform: translate(0);
   }
 }
-@media (min-width:1285px) {
+@media (min-width:1200px) {
     .container{
       flex-direction: row;
       column-gap: 1.5rem;
